@@ -1,0 +1,13 @@
+<div class="ad-banner-example">
+  <h3>Advertisements</h3>
+  <ng-template adHost></ng-template>
+</div>
+
+<ng-template #greeting let-name let-country="birthPlace">
+  {{name}} lives in {{country}}
+</ng-template>
+
+<ng-container [ngTemplateOutlet]="greeting" [ngTemplateOutletContext]="data"></ng-container>
+
+<ng-template #id></ng-template>
+<ng-template #id2></ng-template>
